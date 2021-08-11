@@ -4,9 +4,9 @@ l = length
 for i in range(count):
     s = set()
     length = l
-    l1 = random.randint(1, length - 2)
+    l1 = random.randint(1, length - int(length * 2 /3))
     length -= l1
-    l2 = random.randint(1, length - 1)
+    l2 = random.randint(1, length // 2)
     length -= l2
     l3 = length
     for i in range(l1):

@@ -3,12 +3,14 @@ count, length = int(input()), int(input())
 l = length
 for i in range(count):
     s = set()
-    length = l
-    l1 = random.randint(1, length - int(length * 2 /3))
-    length -= l1
-    l2 = random.randint(1, length // 2)
-    length -= l2
-    l3 = length
+    l1, l2, l3 = [0 for i in range(3)]
+    while l3 == 0 or l3 > l * 2 / 5:
+        length = l
+        l1 = random.randint(length // 8, length - int(length * 2 /3))
+        length -= l1
+        l2 = random.randint(length // 4, length // 2)
+        length -= l2
+        l3 = length
     for i in range(l1):
         if i <= len(list(set(string.ascii_uppercase) - {'O', 'I'})):
             q = random.choice(list(set(string.ascii_uppercase) - {'O', 'I'}))

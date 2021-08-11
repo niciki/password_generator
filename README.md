@@ -1,2 +1,2 @@
 # simple_password_generator
-A simple generator of a given number of passwords of a certain length, necessarily including at least one lowercase, one uppercase letter and one digit, without ambiguous characters ('0', 'O', '1', etc.)
+A simple generator of a given number of passwords of a certain length, necessarily including at least one lowercase, one uppercase letter and one digit, without ambiguous characters ('0', 'O', '1', etc.). The distribution of the number of letters and numbers is carried out in an arbitrary way using the random library. In this case, the program uses all the characters from the given number series as long as there is such a possibility, and then the distribution of characters occurs in an arbitrary way.

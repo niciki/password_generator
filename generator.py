@@ -4,7 +4,7 @@ l = length
 for i in range(count):
     set_of_chars_of_password = set()
     list_of_chars_of_password = []
-    length_uppercase, length_lowercase, length_integers = [0 for i in range(3)]
+    length_uppercase, length_lowercase, length_integers = 0, 0, 0
     while length_integers == 0 or length_integers > l * 2 / 5:
         length = l
         length_uppercase = random.randint(length // 8, length - int(length * 2 /3))

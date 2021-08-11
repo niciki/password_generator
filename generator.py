@@ -34,7 +34,7 @@ for i in range(count):
                 q = str(random.choice([2, 3, 4, 5, 6, 7, 8, 9]))
             set_of_chars_of_password.add(q)
         else:
-            set_of_chars_of_password.append(str(random.choice([2, 3, 4, 5, 6, 7, 8, 9])))
+            set_of_chars_of_password.add(str(random.choice([2, 3, 4, 5, 6, 7, 8, 9])))
     list_of_chars_of_password = list(set_of_chars_of_password)
     random.shuffle(list_of_chars_of_password)
     print(''.join(list_of_chars_of_password))
